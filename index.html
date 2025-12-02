@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sumit Bhattarai — Resume & Interests</title>
+  <meta name="description" content="Sumit Bhattarai — software engineer. Resume, projects and interests.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0b6efd;
+      --muted:#666;
+      --bg:#fff;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #111;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      padding:28px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      max-width:980px;
+      width:100%;
+      background:#fff;
+      border-radius:8px;
+      box-shadow:0 6px 28px rgba(12,20,30,0.06);
+      padding:28px;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+    .avatar{
+      width:92px;
+      height:92px;
+      border-radius:12px;
+      background:linear-gradient(135deg,#e6f0ff,#f7fbff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:var(--accent);
+      font-size:28px;
+    }
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    nav{margin-left:auto}
+    nav a{color:var(--accent);text-decoration:none;margin-left:12px;font-weight:600}
+    main{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:22px}
+    section{background:transparent}
+    .card{padding:18px;border-radius:8px;background:#fafafa;border:1px solid #f0f0f2}
+    h2{margin:0 0 12px;font-size:1.05rem}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#fff;border:1px solid #eee;padding:6px 8px;border-radius:6px;font-size:0.9rem}
+    .job{margin-bottom:12px}
+    .job h3{margin:0;font-size:1rem}
+    .muted{color:var(--muted);font-size:0.92rem}
+    footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center}
+    /* responsive */
+    @media (max-width:900px){
+      main{grid-template-columns:1fr; }
+      nav{width:100%;order:3;margin-top:8px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="avatar" aria-hidden="true">SB</div>
+      <div>
+        <h1>Sumit Bhattarai</h1>
+        <p class="lead">Software Engineer · Privacy & Security · Research</p>
+        <p class="muted">Location · Email: <a href="mailto:you@example.com">you@example.com</a> · <a href="https://github.com/YOUR_USERNAME">GitHub</a></p>
+      </div>
+
+      <nav aria-label="Quick links">
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <section id="resume" class="card" aria-labelledby="resume-heading">
+          <h2 id="resume-heading">Resume</h2>
+          <p class="muted">Short summary</p>
+          <p>I build privacy-aware ML systems and tools for secure software analysis. I enjoy end-to-end features from design to deployment and open-source collaboration.</p>
+
+          <div style="margin-top:12px">
+            <h3>Experience</h3>
+            <div class="job">
+              <h3>Research Engineer — ExampleCorp</h3>
+              <div class="muted">2022 — Present</div>
+              <p>Work on model privacy, NER for PII, and tooling for safe model deployment.</p>
+            </div>
+
+            <div class="job">
+              <h3>Software Engineer — AnotherOrg</h3>
+              <div class="muted">2019 — 2022</div>
+              <p>Built backend services and data pipelines for analytics and feature stores.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:14px">
+            <h3>Education</h3>
+            <p class="muted">M.Sc. Computer Science — University</p>
+          </div>
+        </section>
+
+        <section id="projects" style="margin-top:18px" class="card">
+          <h2>Projects</h2>
+          <ul>
+            <li><strong>PrivacyLint</strong> — static analysis tool to flag PII flows in policies and code.</li>
+            <li><strong>PoliGraph</strong> — policy triplet extractor using prompt engineering and token classification.</li>
+            <li><strong>Teaching Materials</strong> — modules on Privacy & Security in LLMs.</li>
+          </ul>
+        </section>
+
+        <section id="interests" style="margin-top:18px" class="card">
+          <h2>Interests</h2>
+          <ul>
+            <li>Privacy-preserving ML</li>
+            <li>Static analysis & program security</li>
+            <li>Travel & photography</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h2>Skills</h2>
+          <div class="skills" aria-hidden="false">
+            <span class="skill">Python</span>
+            <span class="skill">PyTorch</span>
+            <span class="skill">NLP</span>
+            <span class="skill">Prompt Engineering</span>
+            <span class="skill">Static Analysis</span>
+            <span class="skill">Docker</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2>Contact</h2>
+          <p class="muted">Email</p>
+          <p><a href="mailto:bhatraisummit@gmail.com">bhatraisummit@gmail.com</a></p>
+          <p class="muted">Social</p>
+          <p><a href="https://github.com/bhatraisummit">GitHub</a> · <a href="https://linkedin.com/bhatraisummit">LinkedIn</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="yr"></span> Sumit Bhattarai — <span class="muted">Built with ♥ using GitHub Pages</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
